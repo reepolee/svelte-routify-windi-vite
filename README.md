@@ -1,6 +1,6 @@
 # Svelte Routify WindiCSS Vite
 
-A stater template for Svelte Application, uses Routify file-based router, WindiCSS to compile TailwindCSS and Vite.
+A starter template for Svelte Application, uses Routify file-based router, WindiCSS to compile TailwindCSS and Vite.
 
 [Svelte](https://svelte.dev)  
 [Routify](https://routify.dev)  

@@ -1,7 +1,10 @@
-<header class="py-12 text-4xl text-center">Routify Starter</header>
+<header class="py-12 text-4xl text-center">
+  Application Starter Template
+  <img src="/favicon.png" alt="Reepolee" class="py-4 mx-auto" />
+</header>
 
 <main>
-  <p>A stater template for Svelte Application, uses Routify file-based router, WindiCSS to compile TailwindCSS and Vite.</p>
+  <p>A starter template for Svelte Application, uses Routify file-based router, WindiCSS to compile TailwindCSS and Vite.</p>
 
   <p>
     <a href="https://svelte.dev">Svelte</a><br />
