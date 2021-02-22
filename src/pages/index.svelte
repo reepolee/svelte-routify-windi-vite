@@ -3,7 +3,7 @@
 <main>
   <p>A stater template for Svelte Application, uses Routify file-based router, WindiCSS to compile TailwindCSS and Vite.</p>
 
-  <p class="py-4">
+  <p>
     <a href="https://svelte.dev">Svelte</a><br />
     <a href="https://routify.dev">Routify</a><br />
     <a href="https://vitejs.dev">ViteJS</a><br />
@@ -14,11 +14,19 @@
     Kudos to all the respective authors, special thanks to <a href="https://github.com/jakobrosenberg">@jakobrosenberg</a> and
     <a href="https://github.com/dominikg">@dominikg.</a>
   </p>
+
+  <p>
+    <a href="/fails">Have a look at 404</a>
+  </p>
 </main>
 
 <style>
   main {
     @apply p-8 text-xl;
+  }
+
+  p {
+    @apply py-2;
   }
 
   a {
