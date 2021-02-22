@@ -9,7 +9,7 @@
   <p>
     <a href="https://svelte.dev">Svelte</a><br />
     <a href="https://routify.dev">Routify</a><br />
-    <a href="https://vitejs.dev">ViteJS</a><br />
+    <a href="https://vitejs.dev">Vite</a><br />
     <a href="https://windicss.netlify.app">WindiCSS</a><br />
   </p>
 
