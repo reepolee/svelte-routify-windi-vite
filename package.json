@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "routify -c dev-vite",
-    "build": "routify -b && build-vite",
+    "build": "routify -b && vite build",
     "dev-vite": "vite",
-    "build-vite": "vite build",
     "serve-vite": "vite preview"
   },
   "devDependencies": {
