@@ -1,5 +1,5 @@
 // vite.config.js
-import * as path from "path";
+import path from "path";
 import WindiCSS from "vite-plugin-windicss";
 const svelte = require("@svitejs/vite-plugin-svelte");
 const { defineConfig } = require("vite");

@@ -21,6 +21,8 @@
   <p>
     <a href="/fails">Have a look at 404</a>
   </p>
+
+  <h2>Should be on green and bold (global style)</h2>
 </main>
 
 <style>
