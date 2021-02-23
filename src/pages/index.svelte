@@ -22,10 +22,10 @@
     <a href="/fails">Have a look at 404</a>
   </p>
 
-  <h2>Should be on green and bold (global style)</h2>
+  <h2>Should be on green and bold (global style). On blue for XL screen.</h2>
 </main>
 
-<style>
+<style lang="postcss" scoped>
   main {
     @apply p-8 text-xl;
   }

@@ -8,10 +8,10 @@
     "serve-vite": "vite preview"
   },
   "devDependencies": {
-    "@roxi/routify": "^2.12.5",
-    "svelte": "^3.0.0",
-    "vite": "^2.0.1",
+    "@roxi/routify": "^2.12.7",
     "@svitejs/vite-plugin-svelte": "^0.9.0-0",
-    "vite-plugin-windicss": "^0.4.4"
+    "svelte": "^3.0.0",
+    "vite": "^2.0.2",
+    "vite-plugin-windicss": "0.4.9"
   }
 }
