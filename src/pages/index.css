@@ -1,0 +1,5 @@
+@screen xl {
+  h2 {
+    @apply bg-blue-500;
+  }
+}

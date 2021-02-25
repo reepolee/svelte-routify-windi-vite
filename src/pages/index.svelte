@@ -1,3 +1,7 @@
+<script>
+  import "./index.css";
+</script>
+
 <header class="py-12 text-4xl text-center">
   Application Starter Template
   <img src="/favicon.png" alt="Reepolee" class="py-4 mx-auto" />
@@ -37,5 +41,4 @@
   a {
     @apply text-reepolee-500 font-bold;
   }
-
 </style>
