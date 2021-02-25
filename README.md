@@ -20,7 +20,7 @@ npm run dev
 
 ## VS Code Intellisense
 
-This template does not include TailwindCSS package as it would clutter the repo with over 50 additional packages. We're trying to stay slim here and that's why I suggest installing Tailwind up the directory tree, not in your application repository. VS Code TailwindCSS Intellisene plugin look up the foldets and find Tailwind automatically. I believe it is a good compromise as you only install TailwinCSS once for all you projects as long as you stay within your general coding folder.
+This template does not include TailwindCSS package as it would clutter the repo with over 50 additional packages. We're trying to stay slim here and that's why I suggest installing Tailwind up the directory tree, not in your application repository. VS Code TailwindCSS Intellisene plugin look up the foldets and find TailwindCSS automatically. I believe it is a good compromise as you only install TailwindCSS once for all you projects as long as you stay within your general coding folder.
 
 Mine looks like this:
 
