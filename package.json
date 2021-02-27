@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "routify -c dev-vite",
-    "build": "routify -b && vite build",
+    "build": "routify -b && vite build && npm run brotli:dist",
     "dev-vite": "vite",
-    "serve-vite": "vite preview"
+    "serve-vite": "vite preview",
+    "brotli:dist": "node br.js"
   },
   "devDependencies": {
     "@roxi/routify": "^2.12.7",
     "@svitejs/vite-plugin-svelte": "^0.9.0-0",
     "svelte": "^3.0.0",
     "vite": "^2.0.3",
-    "vite-plugin-windicss": "0.5.0"
+    "vite-plugin-windicss": "0.5.0",
+    "brotli": "^1.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }
