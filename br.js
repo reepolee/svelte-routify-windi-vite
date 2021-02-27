@@ -1,6 +1,6 @@
 const fs = require("fs");
 const compress = require("brotli/compress");
-
+const skipSizeUnderBytes = 10000;
 const dir = "./dist/assets/";
 
 const brotliSettings = {
@@ -13,7 +13,10 @@ const brotliSettings = {
 
 fs.readdirSync(dir).forEach((file) => {
   if (file.endsWith(".js") || file.endsWith(".css") || file.endsWith(".html")) {
-    const result = compress(fs.readFileSync(dir + file), brotliSettings);
-    fs.writeFileSync(dir + file + ".br", result);
+    const stat = fs.statSync(dir + file).size;
+    if (stat > skipSizeUnderBytes) {
+      const result = compress(fs.readFileSync(dir + file), brotliSettings);
+      fs.writeFileSync(dir + file + ".br", result);
+    }
   }
 });
