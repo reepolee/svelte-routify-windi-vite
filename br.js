@@ -1,7 +1,8 @@
+const glob = require("glob");
 const fs = require("fs");
 const compress = require("brotli/compress");
 const skipSizeUnderBytes = 10000;
-const dir = "./dist/assets/";
+const dir = "./dist/**";
 
 const brotliSettings = {
   extension: "br",
@@ -11,12 +12,14 @@ const brotliSettings = {
   lgwin: 12, // default
 };
 
-fs.readdirSync(dir).forEach((file) => {
-  if (file.endsWith(".js") || file.endsWith(".css") || file.endsWith(".html")) {
-    const stat = fs.statSync(dir + file).size;
-    if (stat > skipSizeUnderBytes) {
-      const result = compress(fs.readFileSync(dir + file), brotliSettings);
-      fs.writeFileSync(dir + file + ".br", result);
+glob(dir, function (er, files) {
+  files.forEach((file) => {
+    if (file.endsWith(".js") || file.endsWith(".css") || file.endsWith(".html")) {
+      const stat = fs.statSync(file).size;
+      if (stat > skipSizeUnderBytes) {
+        const result = compress(fs.readFileSync(file), brotliSettings);
+        fs.writeFileSync(file + ".br", result);
+      }
     }
-  }
+  });
 });

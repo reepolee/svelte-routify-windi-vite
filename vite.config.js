@@ -1,8 +1,21 @@
 // vite.config.js
 import path from "path";
 import WindiCSS from "vite-plugin-windicss";
+import { minify } from "html-minifier";
+
 const svelte = require("@svitejs/vite-plugin-svelte");
 const { defineConfig } = require("vite");
+
+const indexReplacePlugin = () => {
+  return {
+    name: "html-transform",
+    transformIndexHtml(html) {
+      return minify(html, {
+        collapseWhitespace: true,
+      });
+    },
+  };
+};
 
 module.exports = defineConfig(({ command, mode }) => {
   const isProduction = mode === "production";
@@ -30,9 +43,16 @@ module.exports = defineConfig(({ command, mode }) => {
         hot: !isProduction,
         emitCss: true,
       }),
+      indexReplacePlugin(),
     ],
     build: {
       minify: isProduction,
     },
+    // indexHtmlTransforms: [
+    //   ({ code }) => {
+    //     console.log(code);
+    //     return code.replace(/Routify/, "Vite Playground");
+    //   },
+    // ],
   };
 });
