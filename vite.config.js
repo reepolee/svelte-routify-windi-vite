@@ -1,12 +1,12 @@
 // vite.config.js
 import path from "path";
-import WindiCSS from "vite-plugin-windicss";
+import svelte from "@svitejs/vite-plugin-svelte";
+import windiCSS from "vite-plugin-windicss";
 import { minify } from "html-minifier";
 
-const svelte = require("@svitejs/vite-plugin-svelte");
 const { defineConfig } = require("vite");
 
-const indexReplacePlugin = () => {
+const indexReplace = () => {
   return {
     name: "html-transform",
     transformIndexHtml(html) {
@@ -29,7 +29,7 @@ module.exports = defineConfig(({ command, mode }) => {
       },
     },
     plugins: [
-      WindiCSS({
+      windiCSS({
         verbose: true,
         silent: false,
         debug: true,
@@ -43,16 +43,10 @@ module.exports = defineConfig(({ command, mode }) => {
         hot: !isProduction,
         emitCss: true,
       }),
-      indexReplacePlugin(),
+      indexReplace(),
     ],
     build: {
       minify: isProduction,
     },
-    // indexHtmlTransforms: [
-    //   ({ code }) => {
-    //     console.log(code);
-    //     return code.replace(/Routify/, "Vite Playground");
-    //   },
-    // ],
   };
 });

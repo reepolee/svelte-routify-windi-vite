@@ -1,3 +1,9 @@
 h2 {
-  @apply bg-green-600 text-white p-2 font-bold;
+  @apply bg-green-600 text-white py-2 px-8 font-bold;
+}
+
+@screen xl {
+  h2 {
+    @apply bg-blue-500;
+  }
 }

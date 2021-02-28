@@ -1,7 +1,3 @@
-<script>
-  import "./index.css";
-</script>
-
 <header class="py-12 text-4xl text-center">
   Application Starter Template
   <img src="/favicon.png" alt="Reepolee" class="py-4 mx-auto" />
@@ -26,6 +22,10 @@
     <a href="/fails">Have a look at 404</a>
   </p>
 
+  <p>
+    <a href="/axios-post">Axios example</a>
+  </p>
+
   <h2>Should be on green and bold (global style). On blue for XL screen.</h2>
 </main>
 
@@ -35,7 +35,7 @@
   }
 
   p {
-    @apply py-2;
+    @apply my-4;
   }
 
   a {
