@@ -22,7 +22,7 @@ export default defineConfig(({ command, mode }) => {
 
   const isProduction = mode === "production";
   return {
-    extensions: ['html', 'js', 'css', 'svg', 'json', 'ts'],
+    extensions: ['ts', 'tsx', 'html', 'js', 'css', 'svg', 'json'],
     optimizeDeps: {
       exclude: ["@roxi/routify"],
     },
