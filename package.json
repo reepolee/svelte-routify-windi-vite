@@ -2,7 +2,7 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
-    "dev": "npm run open & routify -c dev-vite ",
+    "dev": "routify -c dev-vite ",
     "build": "routify -b && vite build && npm run brotli:dist",
     "dev-vite": "vite",
     "serve-vite": "vite preview",
@@ -10,6 +10,7 @@
     "open": "start http://localhost:3000"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.0",
     "@roxi/routify": "^2.13.1",
     "@svitejs/vite-plugin-svelte": "^0.9.3",
     "axios": "^0.21.1",
@@ -18,7 +19,13 @@
     "html-minifier": "^4.0.0",
     "open": "^7.4.2",
     "svelte": "^3.35.0",
+    "svelte-check": "^1.2.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.2",
     "vite": "^2.0.5",
     "vite-plugin-windicss": "^0.6.4"
+  },
+  "dependencies": {
+    "svelte-preprocess": "^4.6.9"
   }
 }
