@@ -11,7 +11,9 @@
   let result = "Response will render here";
 
   function doCall() {
-    axios.post(url, body, headers).then((response) => (result = JSON.stringify(response, undefined, 2)));
+    axios
+      .post(url, body, headers)
+      .then((response) => (result = JSON.stringify(response, undefined, 2)));
   }
 </script>
 
