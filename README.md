@@ -19,7 +19,7 @@ npm i
 npm run dev
 ```
 
-## VS Code Intellisense
+## VS Code IntelliSense
 
 Install the official WindiCSS VS Code plugin for better experience.
 
