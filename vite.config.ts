@@ -1,9 +1,7 @@
-// vite.config.js
 import path from "path";
 import svelte from "@svitejs/vite-plugin-svelte";
 import windiCSS from "vite-plugin-windicss";
 import { minify } from "html-minifier";
-import preprocess from "svelte-preprocess"
 
 // const { defineConfig } = require("vite");
 import { defineConfig } from "vite"
@@ -47,7 +45,6 @@ export default defineConfig(({ command, mode }) => {
         //@ts-ignore
         hot: !isProduction,
         emitCss: true,
-        preprocess: preprocess()
       }),
       indexReplace(),
     ],

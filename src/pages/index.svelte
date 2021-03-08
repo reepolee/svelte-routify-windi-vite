@@ -41,4 +41,5 @@
   a {
     @apply text-reepolee-500 font-bold;
   }
+
 </style>
