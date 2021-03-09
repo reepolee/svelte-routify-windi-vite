@@ -24,3 +24,7 @@ npm run dev
 Install the official WindiCSS VS Code plugin for better experience.
 
 [WindiCSS Extension](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense)
+
+## WORK IN PROGRESS
+
+Please mind this is an **experimental** template, based on pre-production versions of ViteJS and WindiCSS. It was born out of frustration with slow development experience of other bundlers and compilers, but as technology changes, I might change my focus away from any of used packages.
