@@ -1,4 +1,4 @@
-import {resolve} from "path";
+import { resolve } from "path";
 import svelte from "@svitejs/vite-plugin-svelte";
 import windiCSS from "vite-plugin-windicss";
 import { minify } from "html-minifier";
@@ -23,9 +23,9 @@ export default defineConfig(({ command, mode }) => {
     build: {
       polyfillDynamicImport: false,
       cssCodeSplit: false,
-      minify: isProduction,      
+      minify: isProduction,
     },
-  
+
     optimizeDeps: {
       exclude: ["@roxi/routify"],
     },
@@ -33,6 +33,7 @@ export default defineConfig(({ command, mode }) => {
       dedupe: ['@roxi/routify'],
       alias: {
         svelte: resolve(__dirname, "node_modules/svelte"),
+        '@': resolve(__dirname, './src')
       },
     },
     plugins: [
