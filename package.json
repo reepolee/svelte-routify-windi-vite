@@ -1,10 +1,11 @@
 {
   "name": "svelte-app",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "dev": "routify -c dev-vite ",
     "dev:windows": "npm run open & routify -c dev-vite ",
-    "build": "routify -b && vite build && npm run brotli:dist",
+    "build": "routify -b && vite build",
+    "build:br": "routify -b && vite build && npm run brotli:dist",
     "dev-vite": "vite",
     "serve-vite": "vite preview",
     "brotli:dist": "node br.js",
@@ -23,7 +24,7 @@
     "html-minifier": "^4.0.0",
     "open": "^7.4.2",
     "svelte": "^3.35.0",
-    "svelte-check": "^1.2.3",
+    "svelte-check": "^1.2.4",
     "svelte-preprocess": "^4.6.9",
     "tslib": "^2.1.0",
     "vite": "^2.0.5",
