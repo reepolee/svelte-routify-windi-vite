@@ -19,7 +19,26 @@ npm i
 npm run dev
 ```
 
-## VS Code IntelliSense
+## SSG
+
+For SSG you can use [Spank](https://github.com/roxiness/spank):
+```
+npm run build
+npx spank
+```
+
+Ignore error messages about deleting temp files on Windows.
+
+`dist` folder now contains predrendered pages. It renders pages automatically from Routify config. To serve, just run
+```
+npx spassr
+```
+
+Your web app is now served at port 5000 on localhost.
+
+Upload `dist` to any web server or JAMstack service like Netlify, Vercel or Cloudflare and you're good to go.
+
+## VS Code IntelliSense.
 
 Install the official WindiCSS VS Code plugin for better experience.
 
