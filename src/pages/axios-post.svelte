@@ -1,5 +1,7 @@
 <script>
   import axios from "axios";
+  import Heading from "@/components/Heading.svelte";
+  
   const url = "https://jsonplaceholder.typicode.com/posts";
   const body = JSON.stringify({
     title: "foo",
@@ -17,7 +19,7 @@
   }
 </script>
 
-<h2>https://jsonplaceholder.typicode.com/guide/</h2>
+<Heading>https://jsonplaceholder.typicode.com/guide/</Heading>
 
 <button on:click={doCall}> Make an API POST call </button>
 
