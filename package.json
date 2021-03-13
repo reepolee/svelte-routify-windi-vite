@@ -28,6 +28,19 @@
     "svelte-preprocess": "^4.6.9",
     "tslib": "^2.1.0",
     "vite": "^2.0.5",
-    "vite-plugin-windicss": "^0.6.11"
+    "vite-plugin-windicss": "^0.6.11",
+    "mdsvex": "^0.8.9",
+    "remark-slug": "^6.0.0",
+    "routify-plugin-frontmatter": "^1.0.1"
+  },
+  "routify": {
+    "extensions": [
+      "md",
+      "svx",
+      "svelte"
+    ],
+    "plugins": {
+      "routify-plugin-frontmatter": {}
+    }
   }
 }

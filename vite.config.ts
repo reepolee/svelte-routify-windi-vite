@@ -2,6 +2,8 @@ import { resolve } from "path";
 import svelte from "@svitejs/vite-plugin-svelte";
 import windiCSS from "vite-plugin-windicss";
 import { minify } from "html-minifier";
+import { mdsvex }from 'mdsvex';
+import slug from 'remark-slug';
 
 // const { defineConfig } = require("vite");
 import { defineConfig } from "vite"
@@ -37,6 +39,7 @@ export default defineConfig(({ command, mode }) => {
       },
     },
     plugins: [
+    
       windiCSS({
         //@ts-ignore
         verbose: true,
@@ -52,6 +55,13 @@ export default defineConfig(({ command, mode }) => {
         //@ts-ignore
         hot: !isProduction,
         emitCss: true,
+        extensions: ['.md', '.svx','.svelte'],
+        preprocess: [
+          mdsvex({
+            remarkPlugins: [slug],
+            extension: 'md',
+          }),
+        ],  
       }),
       indexReplace(),
     ],

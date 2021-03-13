@@ -19,6 +19,12 @@
   </p>
 
   <p>
+    <a href="/md">Markdown page</a>
+  </p>
+
+
+  
+  <p>
     <a href="/fails">Have a look at 404</a>
   </p>
 
