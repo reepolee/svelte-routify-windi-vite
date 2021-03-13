@@ -5,7 +5,7 @@ A starter template for Svelte Application with Typescript, uses Routify file-bas
 [Svelte](https://svelte.dev)  
 [Routify](https://routify.dev)  
 [Vite](https://vitejs.dev)  
-[WindiCSS](https://windicss.netlify.app)  
+[WindiCSS](https://windicss.org/)  
 [TypeScript](https://www.typescriptlang.org)
 
 Kudos to all the respective authors, special thanks to [@jakobrosenberg](https://github.com/jakobrosenberg) and [@dominikg](https://github.com/dominikg).
@@ -22,6 +22,7 @@ npm run dev
 ## SSG
 
 For SSG you can use [Spank](https://github.com/roxiness/spank):
+
 ```
 npm run build
 npx spank
@@ -30,6 +31,7 @@ npx spank
 Ignore error messages about deleting temp files on Windows.
 
 `dist` folder now contains predrendered pages. It renders pages automatically from Routify config. To serve, just run
+
 ```
 npx spassr
 ```

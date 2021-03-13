@@ -24,7 +24,7 @@
     "html-minifier": "^4.0.0",
     "open": "^7.4.2",
     "svelte": "^3.35.0",
-    "svelte-check": "^1.2.4",
+    "svelte-check": "^1.2.5",
     "svelte-preprocess": "^4.6.9",
     "tslib": "^2.1.0",
     "vite": "^2.0.5",
