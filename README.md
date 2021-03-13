@@ -13,7 +13,7 @@ Kudos to all the respective authors, special thanks to [@jakobrosenberg](https:/
 ## Install
 
 ```
-git clone git@github.com:reepolee/svelte-routify-windi-vite.git best-dx
+git clone https://github.com/reepolee/svelte-routify-windi-vite.git best-dx
 cd best-dx
 npm i
 npm run dev
