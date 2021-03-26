@@ -1,7 +1,7 @@
 <script>
   import axios from "axios";
   import Heading from "@/components/Heading.svelte";
-  
+
   const url = "https://jsonplaceholder.typicode.com/posts";
   const body = JSON.stringify({
     title: "foo",
@@ -13,9 +13,7 @@
   let result = "Response will render here";
 
   function doCall() {
-    axios
-      .post(url, body, headers)
-      .then((response) => (result = JSON.stringify(response, undefined, 2)));
+    axios.post(url, body, headers).then((response) => (result = JSON.stringify(response, undefined, 2)));
   }
 </script>
 
@@ -37,5 +35,9 @@
 
   button {
     @apply bg-red-500 text-white m-8 p-2 border border-gray-200 rounded;
+  }
+
+  button:not(:disabled):hover {
+    @apply transform scale-102;
   }
 </style>
