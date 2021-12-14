@@ -23,11 +23,11 @@ export default defineConfig(({ command, mode }) => {
   const isProduction = mode === "production";
   return {
     build: {
-      polyfillDynamicImport: false,
-      cssCodeSplit: false,
-      minify: isProduction,
+      minify: false,
     },
-
+    server: {
+      host:true
+    },
     optimizeDeps: {
       exclude: ["@roxi/routify"],
     },
@@ -45,11 +45,13 @@ export default defineConfig(({ command, mode }) => {
         verbose: true,
         silent: false,
         debug: true,
-        config: "tailwind.config.js", // tailwind config file path (optional)
+        transformCSS: 'pre',
+        config: "tailwind.config.ts", // tailwind config file path (optional)
         compile: false, // false: interpretation mode; true: compilation mode
         prefix: "windi-", // set compilation mode style prefix
         globalPreflight: true, // set preflight style is global or scoped
         globalUtility: true, // set utility style is global or scoped
+        globalVariables: true, // set variables style is global or scoped
       }),
       svelte({
         //@ts-ignore
