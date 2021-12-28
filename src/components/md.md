@@ -1,5 +1,5 @@
 ## Important
 
-# If u want to use images u need to use this path `public/` to make it work in build. 
+# If u want to use images u need to use direct path to make it work in build. 
 
-Ex: `public/image.png`
+Ex: `/image.png`
