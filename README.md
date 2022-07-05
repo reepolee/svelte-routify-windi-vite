@@ -1,5 +1,9 @@
 # Svelte Routify WindiCSS Vite
 
+
+# This repository is not maintained anymore. Newer versions of included packages are available now and it probaly won't build without code changes.
+
+
 A starter template for Svelte Application with Typescript, uses Routify file-based router, WindiCSS to compile TailwindCSS and Vite.
 
 [Svelte](https://svelte.dev)  
