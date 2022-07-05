@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "routify -c dev-vite ",
     "dev:windows": "npm run open & routify -c dev-vite ",
-    "build": "routify -b && vite build",
+    "build": "routify -b && vite build --base=./",
     "build:br": "routify -b && vite build && npm run brotli:dist",
     "dev-vite": "vite",
     "serve-vite": "vite preview",
